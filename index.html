@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    link
     <title>Document</title>
 </head>
 <body>
     <nav>
         <div id="abt">
-            <a href="#about">a</a>
+            <a href="#about">Profile</a>
         </div>
         <div id="educ">
-            <a href="#education">a</a>
+            <a href="#education">Education</a>
         </div>
-        <div id="skills">
-            a
+        <div id="skill">
+            <a href="#skills">Skills</a>
         </div>
-        <div id="experience">
-            a
+        <div id="exp">
+            <a href="#experience">Experience</a>
         </div>
-        <div id="references">
-            a
+        <div id="ref">
+            <a href="#references">References</a>
+        </div>
+
+        <div id="portfolio">
+            <a href="portfolio.html">Portfolio</a>
         </div>
     </nav>
     <div class="main">
         <section id="about">
             <h1>James Laurence A. Cruz</h1>
-            <p id="address">
-                Blk 12 Lot 15 Cardinal Village Phase 2<br>
-                Salitran 3, City of Dasmariñas, Cavite 4114
+            <p id="desc">
+                
             </p>
             <p id="contact">
-                cruz.james99@gmail.com<br>
-                +63 943 409 3114
+                
             </p>
             <span id="social">
                 <img class="icon" src="./fonts/github-brands.svg">
@@ -74,15 +78,16 @@
             </div>
 
             <div class="educ-card">
-                <h3>Primary</h3>
-                <div>
+                <div><h3>Primary</h3><img onclick="dropdown()" src="down.svg"></div>
+                <div id="collapsible">
                     <span>Jesus Son of Mary Academy</span>
                     <span>2013 - 2017</span>
+                    <span>Brgy. San Manuel II, DBB-A, City of Dasmariñas, Cavite</span>
                 </div>
-                <span>Brgy. San Manuel II, DBB-A, City of Dasmariñas, Cavite</span>
             </div>
         </section>
         <section id="skills">
+            <h2>Skills</h2>
             <div class="skillset">
                 Soft Skills
             </div>
@@ -102,7 +107,8 @@
         <section id="references">
 
         </section>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

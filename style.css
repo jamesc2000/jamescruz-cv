@@ -43,6 +43,9 @@
 html
 {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scrollbar-color: dark;
+    scrollbar-width: thin;
     scroll-behavior: smooth;
 }
 
@@ -60,7 +63,7 @@ nav
 {
     background: var(--rgba-primary-1);
     position: fixed;
-    width: 5rem;
+    width: 10rem;
     height: 100vh;
     left: 0;
 
@@ -78,10 +81,15 @@ nav > * :hover
     background: var(--rgba-secondary-2-1);
 }
 
+nav :last-child
+{
+
+}
+
 .main
 {
     position: absolute;
-    left: 5rem;
+    left: 10rem;
     margin-left: 20px;
 }
 
@@ -121,6 +129,7 @@ h2
 {
     display: flex;
     flex-flow: column;
+    margin-left: 1rem;
 }
 
 .educ-card :last-child
