@@ -66,7 +66,6 @@ nav
     width: 10rem;
     height: 100vh;
     left: 0;
-
 }
 
 nav > *
@@ -89,8 +88,7 @@ nav :last-child
 .main
 {
     position: absolute;
-    left: 10rem;
-    margin-left: 20px;
+    left: 25vw;
 }
 
 h1
@@ -130,18 +128,43 @@ h2
     display: flex;
     flex-flow: column;
     margin-left: 1rem;
-}
-
-.educ-card :last-child
-{
     margin-bottom: 12pt;
+    width: 50vw;
 }
 
-.educ-card > h3
+.uncollapse-container
+{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.uncollapse-container > h3
 {
     font-size: 16pt;
-    margin-bottom: 0;
-    margin-top: 0;
     color: var(--rgba-primary-4);
     font-weight: 400;
+    margin: 0;
+}
+
+.chevron
+{
+    position: absolute;
+    height: 12pt;
+    width: 12pt;
+    content: url('./fonts/chevron-down-solid.svg');
+    right: 5rem;
+    cursor: pointer;
+}
+
+.uncollapsed
+{
+    display: block;
+    transition: 120ms;
+}
+
+.collapsed
+{
+    display: none;
+    transition: 120ms;
 }
