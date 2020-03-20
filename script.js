@@ -1,6 +1,4 @@
 var uncollapse = document.getElementsByClassName('uncollapse-container');
-var uncollapseStatus
-var toggle = true;
 
 function triggerToggle()
 {
@@ -16,8 +14,11 @@ function triggerToggle()
 // add event listeners to all uncollapse-containers
 for (let i = 0; i < uncollapse.length; i++) {
     uncollapse[i].addEventListener("click", function() {
-        triggerToggle();
-        this.nextElementSibling.className = uncollapseStatus;
+        if (this.nextElementSibling.className === 'uncollapsed') {
+            this.nextElementSibling.className = 'collapsed';
+        } else {
+            this.nextElementSibling.className = 'uncollapsed';
+        }
     });
 }
 

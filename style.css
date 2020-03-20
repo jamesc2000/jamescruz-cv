@@ -105,6 +105,11 @@ h2
     margin-bottom: 6pt;
 }
 
+ul
+{
+    margin-top: 0
+}
+
 #social
 {
     display: flex;
@@ -123,12 +128,16 @@ h2
     width: auto;
 }
 
+section > *:not(:first-child)
+{
+    margin-left: 1rem;
+    margin-bottom: 12pt;
+}
+
 .educ-card
 {
     display: flex;
     flex-flow: column;
-    margin-left: 1rem;
-    margin-bottom: 12pt;
     width: 50vw;
 }
 
@@ -137,6 +146,17 @@ h2
     display: flex;
     flex-flow: row;
     align-items: center;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 3pt;
+}
+
+.hoverable :hover
+{
+    background: var(--rgba-secondary-2-1);
+    transition: 120ms;
 }
 
 .uncollapse-container > h3
@@ -153,8 +173,7 @@ h2
     height: 12pt;
     width: 12pt;
     content: url('./fonts/chevron-down-solid.svg');
-    right: 5rem;
-    cursor: pointer;
+    right: 1rem;
 }
 
 .uncollapsed
