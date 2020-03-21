@@ -105,6 +105,13 @@ h2
     margin-bottom: 6pt;
 }
 
+h3
+{
+    color: var(--rgba-primary-4);
+    margin-bottom: 3pt;
+    margin-top: 3pt;
+}
+
 ul
 {
     margin-top: 0
@@ -141,30 +148,10 @@ section > *:not(:first-child)
     width: 50vw;
 }
 
-.uncollapse-container
+.year
 {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    margin-bottom: 3pt;
-}
-
-.hoverable :hover
-{
-    background: var(--rgba-secondary-2-1);
-    transition: 120ms;
-}
-
-.uncollapse-container > h3
-{
-    font-size: 16pt;
-    color: var(--rgba-primary-4);
-    font-weight: 400;
-    margin: 0;
+    position: absolute;
+    right: 0;
 }
 
 .chevron
@@ -174,15 +161,5 @@ section > *:not(:first-child)
     width: 12pt;
     content: url('./fonts/chevron-down-solid.svg');
     right: 1rem;
-}
-
-.uncollapsed
-{
-    transition: max-height 0.2s ease-out;
-}
-
-.collapsed
-{
-    transition: max-height 0.2s ease-out;
 }
 
