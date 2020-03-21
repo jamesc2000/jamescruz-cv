@@ -178,12 +178,11 @@ section > *:not(:first-child)
 
 .uncollapsed
 {
-    display: block;
-    transition: 120ms;
+    transition: max-height 0.2s ease-out;
 }
 
 .collapsed
 {
-    display: none;
-    transition: 120ms;
+    transition: max-height 0.2s ease-out;
 }
+

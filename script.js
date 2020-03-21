@@ -16,8 +16,10 @@ for (let i = 0; i < uncollapse.length; i++) {
     uncollapse[i].addEventListener("click", function() {
         if (this.nextElementSibling.className === 'uncollapsed') {
             this.nextElementSibling.className = 'collapsed';
+            this.nextElementSibling.style.maxHeight = 0;
         } else {
             this.nextElementSibling.className = 'uncollapsed';
+            this.nextElementSibling.style.maxHeight = 'fit-content';
         }
     });
 }
