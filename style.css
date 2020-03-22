@@ -45,6 +45,7 @@ html
     scrollbar-color: dark;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *
@@ -112,10 +113,8 @@ nav > a:hover
 
 nav :last-child
 {
-    margin-top: 50vh;
     font-weight: bold;
     padding-left: 12px;
-
 }
 
 .main
@@ -164,8 +163,19 @@ ul
 
 .icon
 {
-    height: 24pt;
+    height: 28pt;
     width: auto;
+    transition: 200ms;
+    filter: opacity(0.9);
+    transform: scale3d(0.9,0.9,0.9);
+
+}
+
+.icon:hover
+{
+    transform: scale3d(1,1,1);
+    filter: opacity(1);
+    transition: 200ms;
 }
 
 section > *:not(:first-child)
@@ -196,3 +206,16 @@ section > *:not(:first-child)
     right: 1rem;
 }
 
+#skillset-container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 6pt;
+    column-gap: 1rem;
+}
+
+.skillset
+{
+    
+}
