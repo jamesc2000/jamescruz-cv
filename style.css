@@ -120,7 +120,9 @@ nav :last-child
 .main
 {
     position: absolute;
-    left: 25vw;
+    left: 20rem;
+    width: 50vw;
+    min-width: 550px;
 }
 
 h1
@@ -218,4 +220,69 @@ section > *:not(:first-child)
 .skillset
 {
     
+}
+
+@media screen and (min-width: 2559px) {
+    nav
+    {
+        width: 20rem;
+        padding-top: 3vh;
+    }
+    nav > a {
+        width: 20rem;
+        font-size: 28pt;
+        height: 62pt;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main
+    {
+        left: 35rem;
+        font-size: 26pt;
+        padding-top: 3vh;
+    }
+    h1
+    {
+        font-size: 48pt;
+    }
+
+    h2
+    {
+        font-size: 42pt;
+    }
+    .icon
+    {
+        height: 48pt;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav
+    {
+        display: none;
+        width: 20rem;
+        padding-top: 3vh;
+    }
+
+    nav > a 
+    {
+        display: none;
+    }
+    body
+    {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+    .main
+    {
+        position: relative;
+    }
+    h1
+    {
+    }
+
+    h2
+    {
+    }
 }
