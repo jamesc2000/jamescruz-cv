@@ -201,11 +201,11 @@ section > *:not(:first-child)
 
 .chevron
 {
-    position: absolute;
+    /*position: absolute;*/
     height: 12pt;
     width: 12pt;
     content: url('./fonts/chevron-down-solid.svg');
-    right: 1rem;
+    /*right: 1rem; this shouldnt be here*/
 }
 
 #skillset-container
@@ -336,7 +336,7 @@ section > *:not(:first-child)
         max-width: 97vw;
         margin-left: 1.5vw;
         margin-right: 1.5vw;
-        margin-top: 80px;
+        margin-top: 100px;
         position: relative;
     }
 
@@ -377,6 +377,56 @@ section > *:not(:first-child)
     h2
     {
         font-size: 21pt;
+    }
+
+    #toPortfolio-mask
+    {
+        position: absolute;
+        top: -1px;
+        background: var(--rgba-secondary-1-0);
+        height: 117px;
+        width: 100%;
+        clip-path: polygon(-10% 0, 50% 100%, 110% 0);
+        z-index: 1;
+        padding-top: 35px;
+    }
+
+    #toPortfolio-mask > a
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+        text-decoration: underline;
+        font-size: 9pt;
+    }
+
+    #toPortfolio-mask > a > *
+    {
+        margin-bottom: 3px;
+    }
+
+    #toPortfolio-mask > a > #folder
+    {
+        height: 35px;
+        width: 35px;
+    }
+
+    .up
+    {
+        transform: rotate(180deg);
+    }
+
+    #toPortfolio-shadow
+    {
+        position: absolute;
+        top: -1px;
+        background: gray;
+        height: 119px;
+        width: calc(100% + 1px);
+        clip-path: polygon(-11% 0, 50% 100%, 111% 0);
+        z-index: 0;
+        filter: blur(5px);
     }
 }
 
