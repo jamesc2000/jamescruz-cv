@@ -1,16 +1,12 @@
-Resume.code-workspace
-Resume.code-workspace
-node_modules
-
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/portfolio/node_modules
-/portfolio/.pnp
-/portfolio.pnp.js
+/node_modules
+/.pnp
+.pnp.js
 
 # testing
-/portfolio/coverage
+/coverage
 
 # production
 /build

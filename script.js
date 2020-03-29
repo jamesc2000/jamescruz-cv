@@ -4,7 +4,8 @@ function myFunction(x)
     { // If media query matches
         window.scrollTo(0, 90);
     } else {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0
+            );
     }
 }
   
