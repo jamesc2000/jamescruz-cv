@@ -1,17 +1,62 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
+//class Navbar extends React.Component
+//{
+    /*render()
+    {
+        // make navbar elements then put here
+    }*/
+//}
+
+const name = 'James Laurence Cruz'
+var clicked = 0
+
+class Intro extends React.Component
+{
+    render()
+    {
+        return (
+            <div className="name">
+                {name}
+            </div>
+        );
+        if (clicked === 1)
+        {
+            return (<Project />)
+        }
+    }
+}
+
+class Project extends React.Component
+{
+    render()
+    {
+        return (
+            <div>
+                <button>View Source</button>
+                <button>Demo Project</button>
+            </div>
+        );
+    }
+}
+
+class App extends React.Component {
+    render() {
+        return (
+            <div>
+                <Intro />
+                <button onClick={() => {var clicked=1}}>Click Me!</button>
+            </div>
+        );
+    }
+}
+  
+// ========================================
+  
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    <App />,
+    document.getElementById('root')
+ );
+  
