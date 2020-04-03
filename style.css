@@ -234,9 +234,9 @@ section > *:not(:first-child)
 .main-portfolio
 {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
     min-width: 550px;
 }
 
@@ -245,15 +245,27 @@ h1.portfolio
     text-align: center;
     margin-top: 0;
     color: var(--rgba-secondary-1-1);
+    /* TODO: add animation */
 }
 
 .header
 {
+    display: flex;
+    flex-flow: column;
     width: 100vw;
     height: 33vh;
-    background: var(--rgba-primary-4);
-    padding-top: 8vh;
+    background-image: url(nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg);
+    background-position: -54px 55%;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-end;
     /* TODO: add inset shadow */
+}
+
+.header > .credit-badge
+{
+    align-self: flex-start;
+    margin-top: 50px;
 }
 
 .big-element
@@ -262,14 +274,13 @@ h1.portfolio
     height: 66vh;
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly;
-    padding: 10%;
+    justify-content: center;
 }
 
 .grid-element
 {
     width: 30vw;
-    height: 40vh;
+    height: 66vh;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -279,6 +290,40 @@ h1.portfolio
 #placeholder
 {
     background-image: url();
+}
+
+.primary
+{
+    background: var(--rgba-primary-1);
+    border: 2px solid var(--rgba-primary-2);
+    transition: 180ms background ease;
+}
+
+.primary:hover, .secondary:hover
+{
+    background: var(--rgba-primary-2);
+    border: 2px solid var(--rgba-primary-2);
+    transition: 180ms background ease;
+}
+
+.secondary
+{
+    background: var(--rgba-secondary-1-0);
+    border: 2px solid var(--rgba-primary-2);
+    transition: 180ms background ease;
+}
+
+button
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 95px;
+    height: 2.5rem;
+    border-radius: 2px;
+    padding: 3px;
+    margin: 30px 10px;
+    font-weight: bold;
 }
 
 /* for 1440p screens and above*/
