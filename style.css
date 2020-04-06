@@ -76,10 +76,8 @@ body
 
 #construction > img
 {
-    max-width: 720px;
-    max-height: 720px;
-    width: 12vw;
-    height: 12vw;
+    width: 200px;
+    height: 200px;
     margin:20px;
 }
 
