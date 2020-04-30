@@ -44,7 +44,7 @@ html
 
 body
 {
-    background: var(--background);
+    background: linear-gradient(var(--background), var(--dark) 130%);
     color: var(--text);
     margin: 0;
     padding: 0;
@@ -79,11 +79,6 @@ a
 a.text
 {
     background-color: var(--light);
-}
-
-a.text:hover
-{
-    background-color: var(--text);
 }
 
 nav
@@ -266,11 +261,16 @@ section > *:not(:first-child)
     grid-template-columns: auto auto auto;
     row-gap: 6pt;
     column-gap: 1rem;
+    justify-items: center;
 }
 
-.badge-container, .badge
+.badge-container
 {
-    margin: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
     list-style-type: none;
     height: 2rem;
 }
