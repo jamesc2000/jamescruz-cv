@@ -44,7 +44,7 @@ html
 
 body
 {
-    background: linear-gradient(var(--background), var(--dark) 130%);
+    background: linear-gradient(var(--background), var(--dark) 200%);
     color: var(--text);
     margin: 0;
     padding: 0;
@@ -60,6 +60,7 @@ body
     align-items: center;
     justify-content: center;
     margin-top: 25vh;
+    margin-bottom: 60vh;
     width: 100%;
 }
 
@@ -78,7 +79,7 @@ a
 
 a.text
 {
-    background-color: var(--light);
+    color: var(--accent);
 }
 
 nav
@@ -140,7 +141,7 @@ nav :last-child
     transform: translateX(-25vw);*/
     margin-left: auto;
     margin-right: auto;
-    width: 50vw;
+    width: 60vw;
     min-width: 550px;
 }
 
@@ -204,10 +205,9 @@ section > *:not(:first-child)
     margin-bottom: 12pt;
 }
 
-section > *:not(:first-child)
+section
 {
-    border-left: 5px solid var(--accent);
-    padding: 8px;
+    margin-bottom: 21pt;
 }
 
 .educ-card
@@ -280,6 +280,46 @@ section > *:not(:first-child)
     display: none;
 }
 
+form
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
+}
+
+form > *
+{
+    margin-bottom: 6pt;
+}
+
+input, label, textarea
+{
+    display: block;
+    width: 40vw;
+}
+
+input, textarea
+{
+    border: none;
+    border-radius: 3px;
+    background: var(--light);
+    color: var(--background);
+    resize: none;
+}
+
+input
+{
+    height: 18pt;
+    padding: 3px 5px;
+    font-size: 12pt;
+}
+
+input:focus, textarea:focus
+{
+    background: var(--text)
+}
+
 /* Portfolio specific rules */
 .main-portfolio
 {
@@ -344,22 +384,19 @@ h1.portfolio
 
 .primary
 {
-    background: var(--rgba-primary-1);
-    border: 2px solid var(--rgba-primary-2);
+    background: var(--accent);
     transition: 180ms background ease;
 }
 
 .primary:hover, .secondary:hover
 {
-    background: var(--rgba-primary-2);
-    border: 2px solid var(--rgba-primary-2);
+    background: var(--light);
     transition: 180ms background ease;
 }
 
 .secondary
 {
-    background: var(--rgba-secondary-1-0);
-    border: 2px solid var(--rgba-primary-2);
+    background: var(--light);
     transition: 180ms background ease;
 }
 
@@ -369,11 +406,11 @@ button
     align-items: center;
     justify-content: center;
     min-width: 95px;
-    height: 2.5rem;
-    border-radius: 2px;
+    height: 2rem;
+    border-radius: 3px;
     padding: 3px;
-    margin: 30px 10px;
     font-weight: bold;
+    border: none;
 }
 
 /* for 1440p screens and above*/
