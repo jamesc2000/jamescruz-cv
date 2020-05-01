@@ -326,7 +326,6 @@ input:focus, textarea:focus
 .footer
 {
     margin: 12pt auto 6pt auto;
-    color: var(--text-dark);
     width: 70vw;
     display: flex;
     flex-flow: column;
@@ -334,11 +333,26 @@ input:focus, textarea:focus
     justify-content: center;
 }
 
-.quote
+.footer *
+{
+    color: var(--text-dark) !important;
+    text-align: center;
+}
+
+.quote-body
 {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
+    margin-bottom: 3pt;
+}
+
+.quote
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 6pt;
 }
 
@@ -346,8 +360,20 @@ hr
 {
     all: unset;
     border-top: 1px solid var(--text-dark);
-    width: 100%;
+    width: 70%;
     transform: translateY(50%);
+}
+
+.copyright
+{
+    margin-bottom: 6pt;
+}
+
+.attrib
+{
+    display: flex;
+    justify-content: space-between;
+    min-width: 10vw;
 }
 
 /* Portfolio specific rules */
