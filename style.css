@@ -1,9 +1,10 @@
 :root{
     --background: #000000;
-    --dark: #14213D;
+    --dark: #2c2e3a;
     --accent: #FCA311;
     --light: #E5E5E5;
     --text: #FFFFFF;
+    --text-dark: #4b4c53;
 }
 
 @font-face
@@ -84,15 +85,14 @@ a.text
 
 nav
 {
-    background: var(--dark);
+    background: var(--background);
     position: fixed;
     width: 10rem;
     height: 100vh;
     left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0px 0 1px;
-    border-right: 5px solid var(--accent);
+    box-shadow: -5px 0 13px -1px var(--light);
 }
 
 nav > a
@@ -215,6 +215,9 @@ section
     display: flex;
     flex-flow: column;
     width: 50vw;
+    background: var(--dark);
+    border-radius: 3px;
+    padding: 8px;
 }
 
 .year
@@ -318,6 +321,33 @@ input
 input:focus, textarea:focus
 {
     background: var(--text)
+}
+
+.footer
+{
+    margin: 12pt auto 6pt auto;
+    color: var(--text-dark);
+    width: 70vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote
+{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-bottom: 6pt;
+}
+
+hr
+{
+    all: unset;
+    border-top: 1px solid var(--text-dark);
+    width: 100%;
+    transform: translateY(50%);
 }
 
 /* Portfolio specific rules */
@@ -547,12 +577,11 @@ button
 
     .educ-card
     {
-        background: var(--rgba-secondary-1-1);
-        box-shadow: 0 1px 3px 0px gray;
         width: 95vw;
         margin: 12px 2.5vw 12px 2.5vw;
         padding: 5px;
-        border-radius: 3px;
+        background: var(--dark);
+        border-radius: 3px;    
     }
 
     .year

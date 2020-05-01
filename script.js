@@ -1,14 +1,9 @@
-function myFunction(x) 
-{
-    if (x.matches) 
-    { // If media query matches
-        window.scrollTo(0, 90);
-    } else {
-        window.scrollTo(0, 0
-            );
+function media(x) {
+    if (x.matches) {
+        window.scrollTo(0, 90); // Offset scroll on mobile
     }
 }
   
-  var x = window.matchMedia("(max-width: 700px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 700px)")
+media(x) // Call listener function at run time
+x.addListener(media) // Attach listener function on state changes
