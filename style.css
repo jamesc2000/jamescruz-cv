@@ -215,6 +215,9 @@ section
     display: flex;
     flex-flow: column;
     width: 50vw;
+    background: var(--dark);
+    border-radius: 3px;
+    padding: 8px;
 }
 
 .year
@@ -574,12 +577,11 @@ button
 
     .educ-card
     {
-        background: var(--rgba-secondary-1-1);
-        box-shadow: 0 1px 3px 0px gray;
         width: 95vw;
         margin: 12px 2.5vw 12px 2.5vw;
         padding: 5px;
-        border-radius: 3px;
+        background: var(--dark);
+        border-radius: 3px;    
     }
 
     .year
