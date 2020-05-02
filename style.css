@@ -682,5 +682,20 @@ button
         z-index: 0;
         filter: blur(5px);
     }
+
+    input, label, textarea
+    {
+        width: 95vw;
+    }
+
+    .footer
+    {
+        font-size: 8pt;
+    }
+
+    hr
+    {
+        width: 30%;
+    }
 }
 
