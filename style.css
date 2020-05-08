@@ -313,6 +313,7 @@ input, label, textarea
 {
     display: block;
     width: 40vw;
+    cursor: not-allowed;
 }
 
 input, textarea
