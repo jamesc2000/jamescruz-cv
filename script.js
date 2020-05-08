@@ -12,7 +12,7 @@ const quote = document.getElementById('message')
 const author = document.getElementById('quote-author')
 
 var request = new XMLHttpRequest()
-request.open('GET', 'https://quotes.rest/qod?category=life&language=en', true)
+request.open('GET', 'https://quotes.rest/qod?category=inspire&language=en', true)
 request.onload = function() {
     var body = JSON.parse(this.response)
     console.log(body)

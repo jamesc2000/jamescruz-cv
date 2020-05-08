@@ -204,6 +204,14 @@ ul
     transition: 200ms;
 }
 
+#desc
+{
+    width: 50vw;
+    text-indent: 2em;
+    text-align: justify;
+    padding: 8px
+}
+
 section > *:not(:first-child)
 {
     margin-left: 1rem;
@@ -640,7 +648,7 @@ button
 
     #toPortfolio-mask
     {
-        display: relative;
+        display: block;
         position: absolute;
         top: -1px;
         background: var(--rgba-secondary-1-0);
@@ -703,5 +711,11 @@ button
     {
         width: 30%;
     }
+    #desc
+    {
+        width: 95vw;
+        padding: 5px;
+    }
+
 }
 
