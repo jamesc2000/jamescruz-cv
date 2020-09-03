@@ -1,9 +1,25 @@
-nav
-{
-    display:none;
+:root {
+  --background: #FFF;
+  --dark: #2c2e3a;
+  --accent: #fca311;
+  --light: #e5e5e5;
+  --text: #222222;
+  --text-dark: #000;
 }
 
-body
-{
-    width: 8.5in;
+nav {
+  display: none;
+}
+
+#desc {
+    width: 100%;
+}
+
+body {
+  width: 8.5in;
+}
+
+#contact,
+.footer {
+  display: none;
 }
