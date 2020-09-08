@@ -11,6 +11,14 @@ nav {
   display: none;
 }
 
+.year {
+  transform: translateY(-1.8rem);
+}
+
+#skills {
+  page-break-after: always;
+}
+
 #desc {
     width: 100%;
 }
