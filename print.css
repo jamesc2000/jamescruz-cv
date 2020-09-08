@@ -7,27 +7,59 @@
   --text-dark: #000;
 }
 
-nav {
-  display: none;
+h1 {
+  font-size: 31pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+.print {
+  display: unset !important;
+}
+
+.icon {
+  height: 18pt;
 }
 
 .year {
   transform: translateY(-1.8rem);
 }
 
-#skills {
+#education {
   page-break-after: always;
 }
 
+.pr-mask {
+  position: absolute;
+  top: 0.5in;
+  height: 1in;
+}
+
+.pr-picture {
+  margin-top: -0.4in;
+}
+
 #desc {
-    width: 100%;
+  width: 75%;
+  margin: 0;
 }
 
 body {
-  width: 8.5in;
+  width: 100%;
 }
 
-#contact,
-.footer {
-  display: none;
+.main {
+  width: 80%;
+}
+
+#social {
+  margin: 0;
+  padding: 0;
+  text-indent: 0.5em;
+}
+
+.noprint {
+  display: none !important;
 }

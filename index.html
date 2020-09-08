@@ -20,20 +20,18 @@
         <a href="construction.html">Portfolio</a>
     </nav> -->
 
-    <div id="toPortfolio-mask">
+    <!-- <div id="toPortfolio-mask">
         <a href="#"><img id="folder" src="fonts/folder-open-solid.svg"><span>PORTFOLIO</span><img class="chevron up"></a>
     </div>
-    <div id="toPortfolio-shadow"></div>
+    <div id="toPortfolio-shadow"></div> -->
 
 
     <div class="main">
         <section id="about">
             <h1>James Laurence A. Cruz</h1>
-            <span id="social">
-                <a href="https://github.com/jamesc2000"><img class="icon" src="./fonts/github-brands.svg"></a>
-                <a href="mailto:cruz.james99@gmail.com"><img class="icon" src="./fonts/envelope-solid.svg"></a>
-                <a href="https://ph.linkedin.com/in/cruz-james"><img class="icon" src="./fonts/linkedin-brands.svg"></a>
-            </span>
+            <div class="pr-mask">
+                <img height=320 class="pr-picture" src="ui/gradpic-compressed.JPG" alt="James Laurence Cruz picture">
+            </div>
             <p id="desc">
                 Hi! I am a student aspiring to be a web developer in the
                 near future. As of now I am taking my Computer Engineering
@@ -41,6 +39,16 @@
                 in general, I also have a passion for graphic design and
                 visual effects.
             </p>
+            <span id="social" class="print">
+                <a class="text">github.com/jamesc2000</a>
+                <a class="text">cruz.james99@gmail.com</a>
+                <a class="text">ph.linkedin.com/in/cruz-james</a>
+            </span>
+            <span id="social" class="noprint">
+                <a href="https://github.com/jamesc2000"><img class="icon" src="./fonts/github-brands.svg"></a>
+                <a href="mailto:cruz.james99@gmail.com"><img class="icon" src="./fonts/envelope-solid.svg"></a>
+                <a href="https://ph.linkedin.com/in/cruz-james"><img class="icon" src="./fonts/linkedin-brands.svg"></a>
+            </span>
         </section> 
         <section id="education">
             <h2>Education</h2>
@@ -168,7 +176,7 @@
                 <div>Teacher - Pamantasan ng Lungsod ng Maynila</div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="noprint">
             <h2>Contact</h2>
             <form action="post">
                 <label>Name
@@ -185,7 +193,7 @@
         </section>
 
     </div>
-    <div class="footer">
+    <div class="footer noprint">
         <div class="quote">
             <div class="quote-body">
                 <hr>

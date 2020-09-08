@@ -48,6 +48,10 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.print {
+  display: none !important;
+}
+
 #toPortfolio-mask {
   display: none;
 }
@@ -75,6 +79,7 @@ a {
 
 a.text {
   color: var(--accent);
+  display: block;
 }
 
 nav {
@@ -158,6 +163,21 @@ ul {
   margin-top: 0;
 }
 
+.pr-mask {
+  display: block;
+  position: absolute;
+  top: 20pt;
+  right: 30px;
+  transform: translateX(50%);
+  height: 1.5in;
+  clip-path: circle(50%);
+}
+
+.pr-picture {
+  margin-top: -21px;
+  margin-left: 8px;
+}
+
 #social {
   display: flex;
   flex-flow: row;
@@ -183,10 +203,10 @@ ul {
 }
 
 #desc {
-  width: 50vw;
+  width: 45vw;
   text-indent: 2em;
   text-align: justify;
-  padding: 8px;
+  padding: 20px;
 }
 
 section > *:not(:first-child) {
